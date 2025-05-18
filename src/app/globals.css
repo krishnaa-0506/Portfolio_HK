@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    --background: 240 17% 95%; /* #F0F0F5 Very Light Lavender */
+    --foreground: 270 10% 25%; /* Darker lavender/gray for text */
+
+    --card: 0 0% 100%;
+    --card-foreground: 270 10% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 270 10% 25%;
+
+    --primary: 270 21% 62%; /* #947CB0 Vibrant Lavender */
+    --primary-foreground: 0 0% 98%; /* Almost white */
+
+    --secondary: 270 15% 90%; /* Lighter lavender for secondary elements */
+    --secondary-foreground: 270 10% 25%;
+
+    --muted: 270 15% 88%;
+    --muted-foreground: 270 5% 50%;
+
+    --accent: 345 37% 75%; /* #D9A5B2 Soft Pink */
+    --accent-foreground: 0 0% 98%; /* Almost white */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 270 15% 85%;
+    --input: 270 15% 90%;
+    --ring: 270 21% 62%; /* Primary color for rings */
+
+    --radius: 0.5rem;
+
+    /* Chart colors (can be adjusted if charts are used) */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+    /* Sidebar specific (not heavily used in this design, but keep for consistency) */
+    --sidebar-background: 240 10% 98%; /* Very light gray/lavender */
+    --sidebar-foreground: 270 10% 25%;
+    --sidebar-primary: 270 21% 62%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 345 37% 75%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 270 15% 85%;
+    --sidebar-ring: 270 21% 62%;
+  }
+
+  .dark {
+    --background: 270 10% 15%; /* Dark lavender/gray */
+    --foreground: 240 17% 95%; /* Light lavender text */
+
+    --card: 270 10% 20%;
+    --card-foreground: 240 17% 95%;
+
+    --popover: 270 10% 15%;
+    --popover-foreground: 240 17% 95%;
+
+    --primary: 270 21% 62%; /* #947CB0 Vibrant Lavender */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 270 10% 25%;
+    --secondary-foreground: 240 17% 95%;
+
+    --muted: 270 10% 22%;
+    --muted-foreground: 240 10% 65%;
+
+    --accent: 345 37% 75%; /* #D9A5B2 Soft Pink */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 270 10% 30%;
+    --input: 270 10% 25%;
+    --ring: 270 21% 70%;
+
+    /* Sidebar specific for dark mode */
+    --sidebar-background: 270 10% 12%;
+    --sidebar-foreground: 240 17% 95%;
+    --sidebar-primary: 270 21% 62%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 345 37% 75%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 270 10% 30%;
+    --sidebar-ring: 270 21% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom Animations */
+@keyframes floatInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceGlow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 5px hsl(var(--primary)), 0 0 10px hsl(var(--primary) / 0.8), 0 0 15px hsl(var(--primary) / 0.6);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px hsl(var(--primary)), 0 0 20px hsl(var(--primary) / 0.8), 0 0 30px hsl(var(--primary) / 0.6);
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes skillCardBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes dotPulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 hsl(var(--primary) / 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px hsl(var(--primary) / 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 hsl(var(--primary) / 0);
+  }
+}
+
+@keyframes formPopIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@keyframes floatingBlobs1 {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.6; }
+  25% { transform: translate(20px, -30px) scale(1.1); opacity: 0.7; }
+  50% { transform: translate(-10px, 20px) scale(0.9); opacity: 0.5; }
+  75% { transform: translate(30px, 10px) scale(1.05); opacity: 0.65; }
+}
+@keyframes floatingBlobs2 {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.5; }
+  25% { transform: translate(-25px, 15px) scale(0.95); opacity: 0.6; }
+  50% { transform: translate(15px, -20px) scale(1.15); opacity: 0.4; }
+  75% { transform: translate(-10px, -10px) scale(1); opacity: 0.55; }
+}
+
+.animate-floatInLeft {
+  animation: floatInLeft 1s ease-out forwards;
+}
+.animate-bounceGlow {
+  animation: bounceGlow 2s infinite ease-in-out;
+}
+.animate-fadeSlideUp {
+  animation: fadeSlideUp 1s ease-out forwards;
+}
+.animate-formPopIn {
+  animation: formPopIn 0.5s ease-out forwards;
+}
+.animate-dotPulse {
+  animation: dotPulse 2s infinite cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* Scroll-triggered animation base class */
+.scroll-animate {
+  opacity: 0;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.scroll-animate.is-visible {
+  opacity: 1;
+  transform: translateY(0) !important; /* Override initial transform */
+}
+.scroll-animate-fade-slide-up {
+  transform: translateY(50px);
+}
+
+/* Helper for delayed animations */
+.animation-delay-200 { animation-delay: 0.2s; }
+.animation-delay-400 { animation-delay: 0.4s; }
+.animation-delay-600 { animation-delay: 0.6s; }
+.animation-delay-800 { animation-delay: 0.8s; }
+
+/* Ripple effect for buttons */
+.ripple-button {
+  position: relative;
+  overflow: hidden;
+}
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background-color: hsl(var(--primary-foreground) / 0.3);
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  pointer-events: none;
+}
