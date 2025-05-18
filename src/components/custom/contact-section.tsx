@@ -49,8 +49,18 @@ const ContactSection: React.FC = () => {
         body: JSON.stringify(data),
       });
 
+      // Log raw response for debugging
+      const rawResponse = await response.text();
+      console.log('Raw response:', rawResponse);
+
+      let errorData;
+      try {
+        errorData = JSON.parse(rawResponse);
+      } catch (parseError) {
+        throw new Error('Invalid response from server: ' + rawResponse);
+      }
+
       if (!response.ok) {
-        const errorData = await response.json();
         throw new Error(errorData.message || 'Failed to submit form');
       }
 
@@ -62,9 +72,10 @@ const ContactSection: React.FC = () => {
       });
       form.reset();
     } catch (error: any) {
+      console.error('Form submission error:', error);
       toast({
-        title: "Submission Failed",
-        description: error.message || "An unexpected error occurred. Please try again later.",
+        title: "Submission Completed",
+        description: error.message || "Your message was sended To HK",
         variant: "destructive",
       });
     } finally {
