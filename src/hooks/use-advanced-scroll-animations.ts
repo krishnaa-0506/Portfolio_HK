@@ -167,7 +167,6 @@ export const useParallax = (speed: number = 0.5) => {
       const element = elementRef.current;
       if (!element) return;
 
-      const rect = element.getBoundingClientRect();
       const scrolled = window.scrollY;
       const rate = scrolled * speed;
       

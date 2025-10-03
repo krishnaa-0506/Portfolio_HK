@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { Briefcase, GraduationCap, Award, Footprints, School, University } from 'lucide-react';
+import { Briefcase, Award } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/use-scroll-animation';
 
 interface TimelineItem {

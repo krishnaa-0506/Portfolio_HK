@@ -27,7 +27,7 @@ const NavBar: React.FC = () => {
         <div className="flex h-16 items-center justify-center">
           <Link href="#hero" className="text-xl font-bold text-white hover:text-blue-400 transition-colors">
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              HK's Journey towards the future
+              HK&apos;s Journey towards the future
             </span>
           </Link>
         </div>

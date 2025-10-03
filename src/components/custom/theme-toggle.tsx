@@ -1,7 +1,7 @@
 // Add client-side rendering guard
 import { useEffect, useState } from 'react';
 
-const ThemeToggle = () => {
+export default function ThemeToggle() {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {

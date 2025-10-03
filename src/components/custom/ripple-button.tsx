@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { Button, type ButtonProps } from '@/components/ui/button';
-import { Slot } from '@radix-ui/react-slot';
 import { cn } from '@/lib/utils';
 
 export interface RippleButtonProps extends ButtonProps {
@@ -11,7 +10,6 @@ export interface RippleButtonProps extends ButtonProps {
 
 export const RippleButton = React.forwardRef<HTMLButtonElement, RippleButtonProps>(
   ({ className, variant, size, asChild = false, children, ...props }, ref) => {
-    const Comp = asChild ? Slot : 'button';
 
     const createRipple = (event: React.MouseEvent<HTMLElement>) => {
       const button = event.currentTarget;
@@ -31,11 +29,7 @@ export const RippleButton = React.forwardRef<HTMLButtonElement, RippleButtonProp
       button.appendChild(circle);
     };
     
-    // If asChild is true, the child component should handle the onClick.
-    // We are wrapping Button which already handles this.
-    // For direct usage of RippleButton as <RippleButton onClick={...}>, this is fine.
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-        // Type assertion needed if Comp is Slot for the event target
         createRipple(event as React.MouseEvent<HTMLElement>);
         if (props.onClick) {
             props.onClick(event);

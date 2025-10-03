@@ -45,7 +45,7 @@ const ContactSection: React.FC = () => {
               <CardTitle className="text-white">Call Me</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <p className="text-gray-300 mb-4">Let's have a conversation</p>
+              <p className="text-gray-300 mb-4">Let&apos;s have a conversation</p>
               <Button asChild variant="outline" className="border-green-400/50 text-green-400 hover:bg-green-400/10">
                 <a href="tel:+1234567890" target="_blank" rel="noopener noreferrer">
                   <Phone className="h-4 w-4 mr-2" />
@@ -108,11 +108,11 @@ const ContactSection: React.FC = () => {
             <CardContent className="p-8">
               <h3 className="text-3xl font-bold text-white mb-4">Ready to Start Something Amazing?</h3>
               <p className="text-gray-300 text-lg mb-6">
-                Whether it's a project idea or just a chat, I'm always excited to connect with fellow innovators and creators.
+                Whether it&apos;s a project idea or just a chat, I&apos;m always excited to connect with fellow innovators and creators.
               </p>
               <Button size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white border-0">
                 <Mail className="h-5 w-5 mr-2" />
-                Let's Talk
+                Let&apos;s Talk
               </Button>
             </CardContent>
           </Card>

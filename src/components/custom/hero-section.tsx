@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
 import { Download, Send } from 'lucide-react';
 import FloatingBlobs from './floating-blobs';
 import { RippleButton } from './ripple-button'; // Assuming RippleButton is created
@@ -13,7 +12,7 @@ const HeroSection: React.FC = () => {
         <div className="animate-floatInLeft">
           <Image
             src="https://ik.imagekit.io/n31diav73/WhatsApp%20Image%202025-02-15%20at%2010.11.36_8ddcfb9c.jpg?updatedAt=1747455017262"
-            alt="Hari krishnaa's Profile Picture"
+            alt="Hari krishnaa&apos;s Profile Picture"
             width={150}
             height={150}
             data-ai-hint="cute avatar"
@@ -23,7 +22,7 @@ const HeroSection: React.FC = () => {
             Hi! I’m Hari Krishnaa 👋
           </h1>
           <p className="text-xl sm:text-2xl text-muted-foreground mb-10">
-            Engineer. Researcher. Founder. Innovator. Shaping the Future of Advanced Manufacturing and AI Automation — From Hackathon-Driven Ideas to Real-World Impact, Bridging Mechatronics, MERN Development, and Startup Vision for Tomorrow's Industry in Germany
+            Engineer. Researcher. Founder. Innovator. Shaping the Future of Advanced Manufacturing and AI Automation — From Hackathon-Driven Ideas to Real-World Impact, Bridging Mechatronics, MERN Development, and Startup Vision for Tomorrow&apos;s Industry in Germany
           </p>
         </div>
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">

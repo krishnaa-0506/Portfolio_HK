@@ -83,7 +83,7 @@ const AcademicTimeline: React.FC = () => {
         {/* Timeline line */}
         <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-primary/20"></div>
         
-        {timelineData.map((item, index) => (
+        {timelineData.map((item) => (
           <div key={item.year} className="relative flex items-start mb-8">
             {/* Timeline dot */}
             <div className={`relative z-10 w-16 h-16 rounded-full ${getStatusColor(item.status)} flex items-center justify-center text-white font-bold shadow-lg`}>

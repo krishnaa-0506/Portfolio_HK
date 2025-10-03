@@ -20,15 +20,15 @@ const AboutMeSection: React.FC = () => {
             <CardContent>
               <div className="text-lg text-gray-200 leading-relaxed space-y-4">
                 <p>
-                  I'm <strong>Hari Krishnaa</strong> — a 3rd year Mechanical & Mechatronics engineering student who somehow manages to balance <strong>research, coding, startups, and coffee consumption</strong> all at once.
+                  I&apos;m <strong>Hari Krishnaa</strong> — a 3rd year Mechanical & Mechatronics engineering student who somehow manages to balance <strong>research, coding, startups, and coffee consumption</strong> all at once.
                 </p>
                 
                 <p>
-                  I specialize in <strong>additive manufacturing, AI automation, and advanced mechatronic systems</strong> — basically, if it involves robots, 3D printers, or making machines smarter than me, I'm in. I've published 20+ research papers (yes, I really enjoy writing that much), founded a startup called <strong>Hynex Technologies</strong>, and love turning crazy hackathon ideas into real-world prototypes.
+                  I specialize in <strong>additive manufacturing, AI automation, and advanced mechatronic systems</strong> — basically, if it involves robots, 3D printers, or making machines smarter than me, I&apos;m in. I&apos;ve published 20+ research papers (yes, I really enjoy writing that much), founded a startup called <strong>Hynex Technologies</strong>, and love turning crazy hackathon ideas into real-world prototypes.
                 </p>
 
                 <p>
-                  On the tech side, I'm equally at home designing manufacturing solutions, coding full-stack with <strong>MERN</strong>, or experimenting with AI-driven automation. On the fun side, I believe every bug has a personality, every prototype has an attitude, and every engineer deserves snacks during debugging.
+                  On the tech side, I&apos;m equally at home designing manufacturing solutions, coding full-stack with <strong>MERN</strong>, or experimenting with AI-driven automation. On the fun side, I believe every bug has a personality, every prototype has an attitude, and every engineer deserves snacks during debugging.
                 </p>
 
                 <p>
@@ -45,13 +45,13 @@ const AboutMeSection: React.FC = () => {
                       <span>💬</span> Fluent in Mechatronics, Additive Manufacturing, MERN Stack, and Sarcasm.
                     </li>
                     <li className="flex items-center gap-2">
-                      <span>🚀</span> Currently building today's solutions while accidentally planning tomorrow's problems.
+                      <span>🚀</span> Currently building today&apos;s solutions while accidentally planning tomorrow&apos;s problems.
                     </li>
                   </ul>
                 </div>
 
                 <p className="mt-4 text-primary font-medium">
-                  If you're into <strong>AI, automation, startups, or just want to debate whether coffee is a food group</strong>, we'll probably get along.
+                  If you&apos;re into <strong>AI, automation, startups, or just want to debate whether coffee is a food group</strong>, we&apos;ll probably get along.
                 </p>
               </div>
             </CardContent>

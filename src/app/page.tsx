@@ -140,7 +140,7 @@ export default function Home() {
                     <span className="text-green-400 text-2xl">📞</span>
                   </div>
                   <h3 className="text-white text-xl font-semibold mb-2">Call Me</h3>
-                  <p className="text-gray-300 mb-4">Let's have a conversation</p>
+                  <p className="text-gray-300 mb-4">Let&apos;s have a conversation</p>
                   <a href="tel:+916379726858" className="inline-flex items-center px-4 py-2 border border-green-400/50 text-green-400 hover:bg-green-400/10 rounded-md transition-colors">
                     Call Now
                   </a>
@@ -199,7 +199,7 @@ export default function Home() {
                 <h3 className="text-3xl font-bold text-white mb-4">HYNEX Technologies</h3>
                 <p className="text-gray-300 text-lg mb-6 leading-relaxed">
                   My passion startup focused on AI-powered solutions for manufacturing automation and IoT ecosystems. 
-                  We're building the future of Industry 4.0 with cutting-edge technology and innovative engineering solutions.
+                  We&apos;re building the future of Industry 4.0 with cutting-edge technology and innovative engineering solutions.
                 </p>
                 <div className="flex justify-center gap-4 flex-wrap">
                   <a href="https://www.hynex.tech" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white rounded-md transition-colors">
@@ -217,10 +217,10 @@ export default function Home() {
               <div className="bg-black/20 backdrop-blur-sm border border-white/20 max-w-2xl mx-auto rounded-lg p-8">
                 <h3 className="text-3xl font-bold text-white mb-4">Ready to Start Something Amazing?</h3>
                 <p className="text-gray-300 text-lg mb-6">
-                  Whether it's a project collaboration, research discussion, or just a friendly chat about technology and innovation - I'm always excited to connect with fellow innovators and creators.
+                  Whether it&apos;s a project collaboration, research discussion, or just a friendly chat about technology and innovation - I&apos;m always excited to connect with fellow innovators and creators.
                 </p>
                 <a href="https://wa.me/916379726858" className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-md transition-colors text-lg">
-                  � Let's Talk on WhatsApp
+                  💬 Let&apos;s Talk on WhatsApp
                 </a>
               </div>
             </div>

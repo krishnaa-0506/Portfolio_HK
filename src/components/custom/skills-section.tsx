@@ -1,8 +1,8 @@
 "use client";
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Bolt, Brain, Caravan, Code, Database, GitBranch, LayoutGrid, Palette, Smartphone, Workflow, Languages } from 'lucide-react';
-import { useStaggerAnimation, useAdvancedScrollAnimation } from '@/hooks/use-advanced-scroll-animation';
+import { Bolt, Caravan, Code, Database, GitBranch, LayoutGrid, Palette, Workflow, Languages } from 'lucide-react';
+import { useAdvancedScrollAnimation } from '@/hooks/use-advanced-scroll-animation';
 
 interface Skill {
   name: string;

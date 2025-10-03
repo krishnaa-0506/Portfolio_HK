@@ -172,7 +172,7 @@ const NeuralNetworkBackground: React.FC = () => {
     });
 
     // Draw connections
-    nodes.forEach((node, i) => {
+    nodes.forEach((node) => {
       node.connections.forEach(connectionIndex => {
         const connectedNode = nodes[connectionIndex];
         if (connectedNode) {

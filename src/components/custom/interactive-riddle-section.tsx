@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
-import { Lightbulb, Zap, Trophy, Brain, Star } from 'lucide-react';
+import { Lightbulb, Zap, Trophy } from 'lucide-react';
 
 interface Riddle {
   id: number;
@@ -135,7 +135,6 @@ const InteractiveRiddleSection: React.FC = () => {
   const [bulbGlow, setBulbGlow] = useState<boolean>(false);
   const [pageGlow, setPageGlow] = useState<boolean>(false);
   const [streak, setStreak] = useState<number>(0);
-  const [riddleIndex, setRiddleIndex] = useState<number>(0);
 
   // Ensure component only renders after client-side hydration
   useEffect(() => {

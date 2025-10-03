@@ -42,7 +42,7 @@ const QuantumField: React.FC = () => {
           energy: Math.random() * 100,
           phase: Math.random() * Math.PI * 2,
           size: Math.random() * 4 + 2,
-          quantum_state: ['spin_up', 'spin_down', 'superposition'][Math.floor(Math.random() * 3)] as any
+          quantum_state: ['spin_up', 'spin_down', 'superposition'][Math.floor(Math.random() * 3)] as 'spin_up' | 'spin_down' | 'superposition'
         });
       }
       
@@ -63,7 +63,7 @@ const QuantumField: React.FC = () => {
       const waveAmplitude = Math.sin(time * 0.05 + particle.energy * 0.1) * 0.5 + 0.5;
       
       // Quantum state colors
-      let colors = {
+      const colors = {
         spin_up: '#00FFFF',
         spin_down: '#FF00FF',
         superposition: '#FFFF00'

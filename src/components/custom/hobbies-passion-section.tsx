@@ -9,7 +9,6 @@ import {
   Camera, 
   BookOpen, 
   Plane, 
-  Coffee,
   Dumbbell,
   Palette,
   Users,
@@ -218,7 +217,7 @@ const HobbiesPassionSection: React.FC = () => {
               key={currentQuoteIndex}
               className="text-xl italic text-white/90 mb-6 leading-relaxed transition-opacity duration-1000 ease-in-out"
             >
-              "{motivationalQuotes[currentQuoteIndex]}"
+              &quot;{motivationalQuotes[currentQuoteIndex]}&quot;
             </blockquote>
             <cite className="text-sm font-semibold text-blue-400 bg-blue-500/20 px-4 py-2 rounded-full inline-block">
               — Hari Krishnaa, CEO HYNEX Technologies | Future Germany Scholar

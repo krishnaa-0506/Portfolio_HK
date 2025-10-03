@@ -49,7 +49,7 @@ const MagneticField: React.FC = () => {
       // Clear existing paths
       svg.innerHTML = '';
       
-      fieldLinesRef.current.forEach((line, index) => {
+      fieldLinesRef.current.forEach((line) => {
         // Create SVG path
         const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
         
