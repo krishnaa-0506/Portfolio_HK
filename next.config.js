@@ -6,7 +6,9 @@ const nextConfig = {
     unoptimized: true
   },
   experimental: {
-    serverActions: false
+    serverActions: {
+      allowedOrigins: ['localhost:9002']
+    }
   },
   webpack: (config, { isServer }) => {
     config.resolve.fallback = {

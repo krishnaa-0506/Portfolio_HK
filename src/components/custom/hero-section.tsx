@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
             Hi! I’m Hari Krishnaa 👋
           </h1>
           <p className="text-xl sm:text-2xl text-muted-foreground mb-10">
-            An Affable and Ammanable Mechatronics Engineering Student
+            Engineer. Researcher. Founder. Innovator. Shaping the Future of Advanced Manufacturing and AI Automation — From Hackathon-Driven Ideas to Real-World Impact, Bridging Mechatronics, MERN Development, and Startup Vision for Tomorrow's Industry in Germany
           </p>
         </div>
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">

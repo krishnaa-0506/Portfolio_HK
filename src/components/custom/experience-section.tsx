@@ -16,39 +16,39 @@ interface TimelineItem {
 const timelineData: TimelineItem[] = [
   {
     id: 'exp1',
-    date: '2023-2025 - Present',
-    title: 'Be.Mechanical and Mechatronics Engineering(Additive manufacturing)',
-    subtitle: 'Student in SNS college of engineering',
-    description: 'Pursuing with honors at SNS College of Engineering, with a strong focus on AI, robotics, and advanced manufacturing systems. Exploring the intersection of software, hardware, and intelligent automation.',
-    icon: GraduationCap,
-    iconBgClass: 'bg-primary',
+    date: '2025 - 3 Months',
+    title: 'Full Stack Mobile App Development Intern',
+    subtitle: 'Null Class',
+    description: 'Completed intensive 3-month internship in full stack mobile app development, gaining hands-on experience in React Native, Node.js, and database management. Built multiple mobile applications from concept to deployment.',
+    icon: Briefcase,
+    iconBgClass: 'bg-blue-500 text-white',
   },
   {
     id: 'exp2',
-    date: '2018-2023',
-    title: 'Secondary & Higher Secondary Education',
-    subtitle: 'SRT Universal Hr Sec School',
-    description: 'Completed 10th and 12th at SRT Universal Hr Sec School with distinction, building a solid foundation in mathematics, physics, and engineering fundamentals.',
-    icon: University,
-    iconBgClass: 'bg-accent',
+    date: '2025 - 42 Days',
+    title: 'Generative AI Course Training',
+    subtitle: 'Internshala',
+    description: 'Completed comprehensive 42-day training program in Generative AI, covering machine learning algorithms, neural networks, and AI model development. Gained expertise in prompt engineering and AI application development.',
+    icon: Award,
+    iconBgClass: 'bg-purple-500 text-white',
   },
   {
     id: 'exp3',
-    date: '2016-2018',
-    title: 'Middle School Education',
-    subtitle: 'Shri Gurukulam Metric Hr Sec School',
-    description: 'Developed early interest in electronics and design, actively participated in science exhibitions and creative problem-solving competitions.',
-    icon: School,
-    iconBgClass: 'bg-secondary text-secondary-foreground',
+    date: '2024 - 20 Days',
+    title: 'Lathe & CNC Machine Operator Trainee',
+    subtitle: 'Manufacturing Workshop',
+    description: 'Gained practical experience in precision machining operations, working with lathe and CNC machines. Learned programming, setup, and operation of computer-controlled manufacturing equipment.',
+    icon: Briefcase,
+    iconBgClass: 'bg-orange-500 text-white',
   },
   {
     id: 'exp4',
-    date: '2008-2016',
-    title: 'Primary Education',
-    subtitle: 'Holy Redemers Metric Hr Sec School',
-    description: 'Established strong academic discipline and curiosity through interactive learning, earning recognition for creativity and early leadership.',
-    icon: Footprints,
-    iconBgClass: 'bg-secondary text-secondary-foreground',
+    date: '2024 - 15 Days',
+    title: 'Industrial Intern',
+    subtitle: 'Salzer Electronics',
+    description: 'Completed 15-day industrial internship at Salzer Electronics, gaining exposure to electronic component manufacturing, quality control processes, and industrial automation systems.',
+    icon: Briefcase,
+    iconBgClass: 'bg-green-500 text-white',
   },
 ];
 
@@ -56,10 +56,10 @@ const ExperienceSection: React.FC = () => {
   const sectionRef = useScrollAnimation();
 
   return (
-    <section id="experience" ref={sectionRef} className="py-16 sm:py-24 scroll-animate scroll-animate-fade-slide-up">
+        <section id="experience" ref={sectionRef} className="py-16 sm:py-24 bg-transparent scroll-animate scroll-animate-fade-slide-up">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center text-primary mb-16">
-          🗓️ My Journey So Far
+        <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-12">
+          💼 Work Experience
         </h2>
         <div className="relative">
           {/* Vertical line */}
@@ -76,24 +76,24 @@ const ExperienceSection: React.FC = () => {
                 {/* Dot on the timeline */}
                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:block">
                   <div className={`w-8 h-8 rounded-full flex items-center justify-center shadow-md animate-dotPulse ${item.iconBgClass}`}>
-                    <item.icon className="w-4 h-4 text-primary-foreground" />
+                    <item.icon className="w-4 h-4 text-white" />
                   </div>
                 </div>
                 
                 {/* Content card */}
-                <div className={`p-6 rounded-lg shadow-xl bg-card ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`}>
+                <div className={`p-6 rounded-lg shadow-xl bg-black/20 backdrop-blur-sm border border-white/20 ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`}>
                   <div className="flex items-center md:hidden mb-4">
                     <div className={`w-10 h-10 rounded-full flex items-center justify-center shadow-md mr-4 ${item.iconBgClass}`}>
-                       <item.icon className="w-5 h-5 text-primary-foreground" />
+                       <item.icon className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                        <p className="text-sm font-semibold text-primary">{item.date}</p>
+                        <p className="text-sm font-semibold text-blue-400">{item.date}</p>
                     </div>
                   </div>
-                  <p className="text-sm font-semibold text-primary hidden md:block">{item.date}</p>
-                  <h3 className="text-xl font-bold text-foreground mt-1 mb-1">{item.title}</h3>
-                  <p className="text-md font-medium text-muted-foreground mb-2">{item.subtitle}</p>
-                  <p className="text-sm text-foreground leading-relaxed">{item.description}</p>
+                  <p className="text-sm font-semibold text-blue-400 hidden md:block">{item.date}</p>
+                  <h3 className="text-xl font-bold text-white mt-1 mb-1">{item.title}</h3>
+                  <p className="text-md font-medium text-gray-300 mb-2">{item.subtitle}</p>
+                  <p className="text-sm text-gray-400 leading-relaxed">{item.description}</p>
                 </div>
               </div>
             </div>

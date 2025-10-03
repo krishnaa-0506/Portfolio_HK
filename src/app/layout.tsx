@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Sparklefolio | Hk - Creative Developer & Designer',
-  description: 'Personal portfolio of Hk, a creative developer and designer.',
+  title: "HK's Portfolio – From Mechatronics to AI",
+  description: 'Personal portfolio of HK - Mechatronics Engineer, Researcher, Startup Founder, and AI Innovation Pioneer preparing for advanced studies in Germany.',
 };
 
 export default function RootLayout({
@@ -25,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang="en" className="dark">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}>
         <AnimatedCursor />
         {children}
         <Toaster />

@@ -1,8 +1,0 @@
-ext {
-    compileSdkVersion = 34
-    minSdkVersion = 22
-    targetSdkVersion = 34
-    androidxAppCompatVersion = '1.6.1'
-    androidxCoordinatorLayoutVersion = '1.2.0'
-    kotlinVersion = '1.8.22'
-}

@@ -6,88 +6,54 @@ import { useScrollAnimation } from '@/hooks/use-scroll-animation';
 const AboutMeSection: React.FC = () => {
   const sectionRef = useScrollAnimation();
 
-  const funFacts = [
-    { emoji: '🧠', text: 'Thinks 100 things, says 1.' },
-    { emoji: '👀', text: 'Observing everything, participating in nothing.' },
-    { emoji: '😶‍🌫️', text: 'Fluent in overthinking and awkward silences.' },
-    { emoji: '💻', text: 'Prefers debugging code over small talk.' },
-    { emoji: '📡', text: 'Avoids eye contact like it’s an online virus.' },
-    { emoji: '🧃', text: 'Fueled by juice, code, and quiet corners.' },
-    { emoji: '🛌', text: 'Introvert mode: Always ON (unless recharging).' },
-    { emoji: '🐱', text: 'Talks to cats. Gets more response than people.' },
-    { emoji: '🧍‍♂️➡️🧍‍♂️', text: 'Master of avoiding people in hallways.' },
-    { emoji: '🎧', text: 'Headphones in = do not disturb (even if no music).' },
-    { emoji: '🚪', text: 'Favorite feature: Room with a door.' },
-    { emoji: '🌑', text: 'Thrives in low-light, low-noise, low-social environments.' },
-  ];
-  
-
   return (
-    <section id="about" ref={sectionRef} className="py-16 sm:py-24 bg-secondary/50 scroll-animate scroll-animate-fade-slide-up">
+    <section id="about" ref={sectionRef} className="py-16 sm:py-24 bg-transparent scroll-animate scroll-animate-fade-slide-up">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center text-primary mb-12">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-12">
           🙋‍♂️ A Little About Me
         </h2>
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <Card className="shadow-xl">
+        <div className="flex justify-center">
+          <Card className="shadow-2xl max-w-4xl w-full bg-black/20 backdrop-blur-sm border-white/20">
             <CardHeader>
-              <CardTitle className="text-2xl text-primary">Heyy There..... 📖</CardTitle>
+              <CardTitle className="text-2xl text-blue-400">Hey there 👋</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-lg text-foreground leading-relaxed space-y-4">
-                <p className="font-semibold">
-                  👋 I'm Hk!
+              <div className="text-lg text-gray-200 leading-relaxed space-y-4">
+                <p>
+                  I'm <strong>Hari Krishnaa</strong> — a 3rd year Mechanical & Mechatronics engineering student who somehow manages to balance <strong>research, coding, startups, and coffee consumption</strong> all at once.
                 </p>
                 
                 <p>
-                  Not a prodigy. Not a topper. Just a curious middle-bencher who once thought HTML was a coding language and spent a whole evening wondering why div wasn't working because I typed it as dvd. 😅
+                  I specialize in <strong>additive manufacturing, AI automation, and advanced mechatronic systems</strong> — basically, if it involves robots, 3D printers, or making machines smarter than me, I'm in. I've published 20+ research papers (yes, I really enjoy writing that much), founded a startup called <strong>Hynex Technologies</strong>, and love turning crazy hackathon ideas into real-world prototypes.
                 </p>
 
                 <p>
-                  My journey into tech didn't start with confidence — it started with confusion, broken code, and lots of Googling. But little by little, I stuck with it. From accidental bugs to accidental breakthroughs, I slowly fell in love with building stuff that works (even if it takes 37 tries).
+                  On the tech side, I'm equally at home designing manufacturing solutions, coding full-stack with <strong>MERN</strong>, or experimenting with AI-driven automation. On the fun side, I believe every bug has a personality, every prototype has an attitude, and every engineer deserves snacks during debugging.
                 </p>
 
                 <p>
-                  Now, I'm a developer and designer who enjoys turning chaotic ideas into simple, usable things. I don't claim to know everything (still scared of regex, not gonna lie), but I love learning, experimenting, and figuring things out — even if it means breaking everything first.
+                  My future goal? <strong>PG in Germany</strong> 🇩🇪, where I want to work on global-scale smart manufacturing systems while exploring bratwurst, pretzels, and a whole lot of engineering innovation.
                 </p>
 
-                <div className="mt-4">
-                  <p className="mb-2">When I'm not coding, I'm probably:</p>
-                  <ul className="space-y-2 pl-8">
+                <div className="mt-4 p-4 bg-primary/5 rounded-lg">
+                  <p className="mb-2 font-semibold">To sum it up:</p>
+                  <ul className="space-y-2 pl-4">
                     <li className="flex items-center gap-2">
-                      <span>🛠️</span> Messing around with random side projects
+                      <span>✨</span> <strong>Engineer. Researcher. Founder. Innovator.</strong>
                     </li>
                     <li className="flex items-center gap-2">
-                      <span>🍵</span> Overthinking life with a cup of tea
+                      <span>💬</span> Fluent in Mechatronics, Additive Manufacturing, MERN Stack, and Sarcasm.
                     </li>
                     <li className="flex items-center gap-2">
-                      <span>🎨</span> Clicking around Figma pretending I know design
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span>😶‍🌫️</span> Trying to avoid attention in group calls
+                      <span>🚀</span> Currently building today's solutions while accidentally planning tomorrow's problems.
                     </li>
                   </ul>
                 </div>
 
-                <p className="mt-4">
-                  I'm not the smartest in the room — but I'm definitely the one who doesn't give up. I'm just here to learn, grow, and make things better.
+                <p className="mt-4 text-primary font-medium">
+                  If you're into <strong>AI, automation, startups, or just want to debate whether coffee is a food group</strong>, we'll probably get along.
                 </p>
               </div>
-            </CardContent>
-          </Card>
-          <Card className="shadow-xl">
-            <CardHeader>
-              <CardTitle className="text-2xl text-primary">Fun Facts 🎉</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-3">
-                {funFacts.map((fact, index) => (
-                  <li key={index} className="flex items-start text-lg text-foreground animate-fadeSlideUp" style={{ animationDelay: `${index * 0.2 + 0.5}s`}}>
-                    <span className="mr-3 text-2xl">{fact.emoji}</span>
-                    <span>{fact.text}</span>
-                  </li>
-                ))}
-              </ul>
             </CardContent>
           </Card>
         </div>

@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
           Made with <span role="img" aria-label="love" className="text-accent animate-pulse">💖</span> by Hari krishnaa
         </p>
         <p className="text-xs text-muted-foreground/70 mt-1">
-          © {new Date().getFullYear()} Sparklefolio. All Rights Reserved .
+          © {new Date().getFullYear()} HK's Portfolio – From Mechatronics to AI. All Rights Reserved.
         </p>
       </div>
     </footer>
